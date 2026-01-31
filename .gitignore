@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.venv/
+pnpm-lock.yaml
+.env
+2b/node_modules/
+2b/.next/
