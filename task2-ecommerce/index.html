@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShopSmart – Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🛍️ ShopSmart</h1>
+  <p class="subtitle">Find the best products at the best price</p>
+
+  <div class="controls">
+    <select id="categoryFilter" onchange="applyFilterSort()">
+      <option value="all">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Accessories">Accessories</option>
+      <option value="Footwear">Footwear</option>
+    </select>
+
+    <select id="sortOption" onchange="applyFilterSort()">
+      <option value="default">Sort By</option>
+      <option value="price-asc">Price ↑</option>
+      <option value="price-desc">Price ↓</option>
+      <option value="name-asc">Name A–Z</option>
+      <option value="name-desc">Name Z–A</option>
+      <option value="rating-asc">Rating ↑</option>
+      <option value="rating-desc">Rating ↓</option>
+    </select>
+  </div>
+
+  <div id="productList" class="product-list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
